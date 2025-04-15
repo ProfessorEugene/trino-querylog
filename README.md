@@ -12,7 +12,7 @@ Its main purpose is to gather queries metadata and statistics as one event per l
 ## Build
 
 ```
-mvn clean package dependency:copy-dependencies -DincludeScope=runtime
+mvn clean package
 ```
 
 ## Deploy
@@ -21,7 +21,6 @@ mvn clean package dependency:copy-dependencies -DincludeScope=runtime
 
 Copy the following artifacts (after successful build) to the Trino plugin folder (`<path_to_trino>/plugin/trino-querylog/`)
 ```
-target/dependency/*.jar
 target/trino-querylog-*.jar
 ```
 
